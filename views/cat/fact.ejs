@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Cat Facts</title>
+</head>
+<body>
+    <hr>
+    <div class="row col-xs-8 col-xs-offset-2">
+      <% if (fact) { %>
+        <!-- If we don't stringify the data, we'll just see [object Object] - see Further Study section -->
+        <%= JSON.stringify(fact) %>
+      <% } %>
+    </div>
+    <a href="/cats/facts">New Fact</a>
+</body>
+</html>
