@@ -8,6 +8,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Cat Facts' });
 });
 
-router.get('/cat/facts', ROOT_URL)
+// router.get('/cat/fact', ROOT_URL)
 
 module.exports = router;
